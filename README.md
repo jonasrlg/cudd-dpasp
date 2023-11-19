@@ -44,6 +44,12 @@ make check
 ```
 
 This allows you to run the later compiled program without giving the paths to the CUDD library and/or installing the CUDD library into `/usr/lib`.
+Then, you can compile your example program from the command line as follows:
+
+```sh
+gcc test.c -o testprogram -I /path/to/cudd-3.0.0/cudd -I /path/to/cudd-3.0.0/util -I /path/to/cudd-3.0.0/ -I /path/to/cudd-3.0.0/st -static -L /path/to/cudd-3.0.0/cudd/.libs/ -I /path/to/cudd-3.0.0/st/.libs/ -lcudd -lm
+```
+
 It is possible to install CUDD into `/usr/lib` with:
 
 ```sh
