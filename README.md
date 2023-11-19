@@ -1,6 +1,6 @@
 # CUDD
 
-CUDD version 3.0.0 from  David Kebo Tutorials
+CUDD version 3.0.0
 
 The CUDD package is a package written in C for the manipulation of
 decision diagrams.  It supports binary decision diagrams (BDDs),
