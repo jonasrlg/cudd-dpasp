@@ -34,7 +34,17 @@ starting point is index.html. Documentation for the `dddmp` library is in the `d
 
 ## Installation
 
-In the simplest form, you can build the static libraries with:
+To build against CUDD statically, use
+
+```sh
+autoreconf
+./configure --enable-dddmp --enable-obj --enable-shared --enable-static
+make
+make check
+```
+
+This allows you to run the later compiled program without giving the paths to the CUDD library and/or installing the CUDD library into `/usr/lib`.
+It is possible to install CUDD into `/usr/lib` with:
 
 ```sh
   autoreconf
